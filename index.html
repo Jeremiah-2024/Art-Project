@@ -1,0 +1,84 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>My Portfolio - Home</title>  
+</head>  
+<body>  
+    <header>  
+        <h1>My Portfolio</h1>  
+        <nav>  
+            <ul>  
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="about.html">About Me</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+
+    <main>  
+        <section class="hero">  
+            <img id="profilePhoto" src="profile.jpg" alt="My Profile Photo">  
+            <h2>Hi, my name is Jeremiah Gonlehgonye.</h2>  
+            <p>Welcome to my portfolio! Check out my projects and skills below.</p>  
+        </section>  
+
+        <section class="projects">  
+            <h3>My Projects</h3>  
+            <div class="project-grid">  
+                <div class="project-item">  
+                    <h4>Project 1</h4>  
+                    <p> Click the button below to view full project.</p>  
+                    <a class="project-link" href="project-1.jpg">View Project</a>  
+                </div>  
+                <div class="project-item">  
+                    <h4>Project 2</h4>  
+                    <p>Click the button below to view full project.</p>  
+                    <a class="project-link" href="project-2.jpg">View Project</a>  
+                </div>  
+                <div class="project-item">  
+                    <h4>Project 3</h4>  
+                    <p>Click the button below to view full project.</p>  
+                    <a class="project-link" href="project-1.jpg">View Project</a>  
+                </div>  
+            </div>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; Jeremiah Gonlehgonye, 2024. All rights reserved.</p>  
+    <div class="icons">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </div>
+    </footer>  
+
+    <!-- Modal for Profile Photo -->  
+    <div id="profileModal" class="modal">  
+        <div class="modal-content">  
+            <span class="close-button" id="closeProfileModal">&times;</span>  
+            <h2>much About Me</h2>  
+            <p>Born june 25 1990, in Nimba, Liberia. curently studying at starz university to aquired more about IT.</p>  
+        </div>  
+    </div>  
+
+    <script>
+        // Modal functionality for profile photo  
+document.getElementById("profilePhoto").onclick = function() {  
+    document.getElementById("profileModal").style.display = "block";  
+}  
+
+document.getElementById("closeProfileModal").onclick = function() {  
+    document.getElementById("profileModal").style.display = "none";  
+}  
+
+    </script>  
+</body>  
+</html>
